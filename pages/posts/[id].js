@@ -28,6 +28,8 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
+        <meta name="google" content="notranslate" key="notranslate" />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
