@@ -30,6 +30,11 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
         <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
         <meta name="google" content="notranslate" key="notranslate" />
+        <link
+          rel="canonical"
+          href="https://example.com/blog/original-post"
+          key="canonical"
+        />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
